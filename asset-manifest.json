@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/pegacargoreact0/static/css/main.9a3cab9e.css",
+    "main.js": "/pegacargoreact0/static/js/main.7e57d0ec.js",
+    "static/js/787.179f66c1.chunk.js": "/pegacargoreact0/static/js/787.179f66c1.chunk.js",
+    "static/media/logosbbg.png": "/pegacargoreact0/static/media/logosbbg.bb464a8da7ce01aac1dd.png",
+    "index.html": "/pegacargoreact0/index.html",
+    "main.9a3cab9e.css.map": "/pegacargoreact0/static/css/main.9a3cab9e.css.map",
+    "main.7e57d0ec.js.map": "/pegacargoreact0/static/js/main.7e57d0ec.js.map",
+    "787.179f66c1.chunk.js.map": "/pegacargoreact0/static/js/787.179f66c1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a3cab9e.css",
+    "static/js/main.7e57d0ec.js"
+  ]
+}
