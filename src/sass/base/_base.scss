@@ -32,8 +32,10 @@
 }
 
 .header-menu {
-    background-color: white !important;
-    color           : black;
+    color           : var(--color-black) !important;
+    background-color: var(--color-white) !important;
+    height          : 100vh;
+    width           : 100%;
 }
 
 .org-left:hover {
@@ -63,7 +65,8 @@
     margin-top      : .05em;
     margin-right    : .05em;
     border-radius   : 0px 10px;
-    padding         : .5rem 1rem;
+    padding         : .5em 1em;
+    text-align      : center;
     color           : var(--color-white);
 }
 
@@ -120,8 +123,20 @@
     background-color: var(--color-org);
 }
 
+.bgs-org {
+    background-color: var(--colors-org);
+}
+
 .bg-white {
     background-color: var(--color-white);
+}
+
+.bg-gray {
+    background-color: var(--color-gray);
+}
+
+.bgl-cyan {
+    background-color: var(--colorl-cyan);
 }
 
 /* TEXT CUSTOM AND COLORS */
@@ -131,14 +146,23 @@
     white-space  : nowrap;
 }
 
+.txt-start {
+    text-align: left !important
+}
+
+.txt-end {
+    text-align: right !important
+}
+
 .txt-center {
-    text-align: center
+    text-align: center !important
 }
 
 .txt-link {
     text-decoration: none !important;
     color          : inherit !important;
     font-weight    : 700;
+    color          : inherit !important;
 }
 
 .txt-white {
@@ -147,6 +171,10 @@
 
 .txt-gray {
     color: var(--color-gray) !important;
+}
+
+.txt-dark-gray {
+    color: var(--color-darkgray);
 }
 
 .txt-lt {
@@ -166,6 +194,10 @@
     color: var(--color-cyan) !important;
 }
 
+.txts-cyan {
+    color: var(--colors-cyan) !important;
+}
+
 .txt-danger {
     color: var(--color-danger) !important;
 }
@@ -174,39 +206,59 @@
     color: var(--color-blue);
 }
 
+.txt-black {
+    color: var(--color-black);
+}
+
+.lowercase {
+    text-transform: lowercase !important
+}
+
+.uppercase {
+    text-transform: uppercase !important
+}
+
+.capitalize {
+    text-transform: capitalize !important
+}
+
 /* ---------- FONTS STYLE - FAMILY ---------- */
 /* FONT SIZE */
 .fs-1 {
-    font-size: calc(1.375rem + 1.5vw) !important
+    font-size: calc(1.375em + 1.5vw) !important
 }
 
 .fs-2 {
-    font-size: calc(1.325rem + .9vw) !important
+    font-size: calc(1.325em + .9vw) !important
 }
 
 .fs-3 {
-    font-size: calc(1.3rem + .6vw) !important
+    font-size: calc(1.3em + .6vw) !important
 }
 
 .fs-4 {
-    font-size: calc(1.275rem + .3vw) !important
+    font-size: calc(1.275em + .3vw) !important
 }
 
 .fs-5 {
-    font-size: 1.25rem !important
+    font-size: 1.25em !important
 }
 
 .fs-6 {
-    font-size: 1rem !important
+    font-size: 1em !important
 }
 
 .fs-7 {
-    font-size: .7rem !important
+    font-size: .8em !important
 }
 
 /* LETTER SPACING */
 .ls-1 {
-    letter-spacing: 1 !important
+    letter-spacing: 1px !important
+}
+
+.ls-xs {
+    letter-spacing: .8px !important
 }
 
 /* FONT.LINE-HEIGHT */
@@ -289,23 +341,23 @@
 }
 
 .m-1 {
-    margin: .25rem !important
+    margin: .25em !important
 }
 
 .m-2 {
-    margin: .5rem !important
+    margin: .5em !important
 }
 
 .m-3 {
-    margin: 1rem !important
+    margin: 1em !important
 }
 
 .m-4 {
-    margin: 1.5rem !important
+    margin: 1.5em !important
 }
 
 .m-5 {
-    margin: 3rem !important
+    margin: 3em !important
 }
 
 .m-auto {
@@ -318,28 +370,33 @@
 }
 
 .mx-1 {
-    margin-right: .25rem !important;
-    margin-left : .25rem !important
+    margin-right: .25em !important;
+    margin-left : .25em !important
 }
 
 .mx-2 {
-    margin-right: .5rem !important;
-    margin-left : .5rem !important
+    margin-right: .5em !important;
+    margin-left : .5em !important
 }
 
 .mx-3 {
-    margin-right: 1rem !important;
-    margin-left : 1rem !important
+    margin-right: 1em !important;
+    margin-left : 1em !important
 }
 
 .mx-4 {
-    margin-right: 1.5rem !important;
-    margin-left : 1.5rem !important
+    margin-right: 1.5em !important;
+    margin-left : 1.5em !important
+}
+
+.mx-45 {
+    margin-right: 2.3em !important;
+    margin-left : 2.3em !important
 }
 
 .mx-5 {
-    margin-right: 3rem !important;
-    margin-left : 3rem !important
+    margin-right: 3em !important;
+    margin-left : 3em !important
 }
 
 .mx-auto {
@@ -353,28 +410,28 @@
 }
 
 .my-1 {
-    margin-top   : .25rem !important;
-    margin-bottom: .25rem !important
+    margin-top   : .25em !important;
+    margin-bottom: .25em !important
 }
 
 .my-2 {
-    margin-top   : .5rem !important;
-    margin-bottom: .5rem !important
+    margin-top   : .5em !important;
+    margin-bottom: .5em !important
 }
 
 .my-3 {
-    margin-top   : 1rem !important;
-    margin-bottom: 1rem !important
+    margin-top   : 1em !important;
+    margin-bottom: 1em !important
 }
 
 .my-4 {
-    margin-top   : 1.5rem !important;
-    margin-bottom: 1.5rem !important
+    margin-top   : 1.5em !important;
+    margin-bottom: 1.5em !important
 }
 
 .my-5 {
-    margin-top   : 3rem !important;
-    margin-bottom: 3rem !important
+    margin-top   : 3em !important;
+    margin-bottom: 3em !important
 }
 
 .my-auto {
@@ -387,23 +444,23 @@
 }
 
 .mt-1 {
-    margin-top: .25rem !important
+    margin-top: .25em !important
 }
 
 .mt-2 {
-    margin-top: .5rem !important
+    margin-top: .5em !important
 }
 
 .mt-3 {
-    margin-top: 1rem !important
+    margin-top: 1em !important
 }
 
 .mt-4 {
-    margin-top: 1.5rem !important
+    margin-top: 1.5em !important
 }
 
 .mt-5 {
-    margin-top: 3rem !important
+    margin-top: 3em !important
 }
 
 .mt-auto {
@@ -415,23 +472,23 @@
 }
 
 .me-1 {
-    margin-right: .25rem !important
+    margin-right: .25em !important
 }
 
 .me-2 {
-    margin-right: .5rem !important
+    margin-right: .5em !important
 }
 
 .me-3 {
-    margin-right: 1rem !important
+    margin-right: 1em !important
 }
 
 .me-4 {
-    margin-right: 1.5rem !important
+    margin-right: 1.5em !important
 }
 
 .me-5 {
-    margin-right: 3rem !important
+    margin-right: 3em !important
 }
 
 .me-auto {
@@ -443,23 +500,23 @@
 }
 
 .mb-1 {
-    margin-bottom: .25rem !important
+    margin-bottom: .25em !important
 }
 
 .mb-2 {
-    margin-bottom: .5rem !important
+    margin-bottom: .5em !important
 }
 
 .mb-3 {
-    margin-bottom: 1rem !important
+    margin-bottom: 1em !important
 }
 
 .mb-4 {
-    margin-bottom: 1.5rem !important
+    margin-bottom: 1.5em !important
 }
 
 .mb-5 {
-    margin-bottom: 3rem !important
+    margin-bottom: 3em !important
 }
 
 .mb-auto {
@@ -471,23 +528,23 @@
 }
 
 .ms-1 {
-    margin-left: .25rem !important
+    margin-left: .25em !important
 }
 
 .ms-2 {
-    margin-left: .5rem !important
+    margin-left: .5em !important
 }
 
 .ms-3 {
-    margin-left: 1rem !important
+    margin-left: 1em !important
 }
 
 .ms-4 {
-    margin-left: 1.5rem !important
+    margin-left: 1.5em !important
 }
 
 .ms-5 {
-    margin-left: 3rem !important
+    margin-left: 3em !important
 }
 
 .ms-auto {
@@ -500,23 +557,23 @@
 }
 
 .p-1 {
-    padding: .25rem !important
+    padding: .25em !important
 }
 
 .p-2 {
-    padding: .5rem !important
+    padding: .5em !important
 }
 
 .p-3 {
-    padding: 1rem !important
+    padding: 1em !important
 }
 
 .p-4 {
-    padding: 1.5rem !important
+    padding: 1.5em !important
 }
 
 .p-5 {
-    padding: 3rem !important
+    padding: 3em !important
 }
 
 .px-0 {
@@ -525,28 +582,28 @@
 }
 
 .px-1 {
-    padding-right: .25rem !important;
-    padding-left : .25rem !important
+    padding-right: .25em !important;
+    padding-left : .25em !important
 }
 
 .px-2 {
-    padding-right: .5rem !important;
-    padding-left : .5rem !important
+    padding-right: .5em !important;
+    padding-left : .5em !important
 }
 
 .px-3 {
-    padding-right: 1rem !important;
-    padding-left : 1rem !important
+    padding-right: 1em !important;
+    padding-left : 1em !important
 }
 
 .px-4 {
-    padding-right: 1.5rem !important;
-    padding-left : 1.5rem !important
+    padding-right: 1.5em !important;
+    padding-left : 1.5em !important
 }
 
 .px-5 {
-    padding-right: 3rem !important;
-    padding-left : 3rem !important
+    padding-right: 3em !important;
+    padding-left : 3em !important
 }
 
 .py-0 {
@@ -555,28 +612,28 @@
 }
 
 .py-1 {
-    padding-top   : .25rem !important;
-    padding-bottom: .25rem !important
+    padding-top   : .25em !important;
+    padding-bottom: .25em !important
 }
 
 .py-2 {
-    padding-top   : .5rem !important;
-    padding-bottom: .5rem !important
+    padding-top   : .5em !important;
+    padding-bottom: .5em !important
 }
 
 .py-3 {
-    padding-top   : 1rem !important;
-    padding-bottom: 1rem !important
+    padding-top   : 1em !important;
+    padding-bottom: 1em !important
 }
 
 .py-4 {
-    padding-top   : 1.5rem !important;
-    padding-bottom: 1.5rem !important
+    padding-top   : 1.5em !important;
+    padding-bottom: 1.5em !important
 }
 
 .py-5 {
-    padding-top   : 3rem !important;
-    padding-bottom: 3rem !important
+    padding-top   : 3em !important;
+    padding-bottom: 3em !important
 }
 
 .pt-0 {
@@ -584,23 +641,23 @@
 }
 
 .pt-1 {
-    padding-top: .25rem !important
+    padding-top: .25em !important
 }
 
 .pt-2 {
-    padding-top: .5rem !important
+    padding-top: .5em !important
 }
 
 .pt-3 {
-    padding-top: 1rem !important
+    padding-top: 1em !important
 }
 
 .pt-4 {
-    padding-top: 1.5rem !important
+    padding-top: 1.5em !important
 }
 
 .pt-5 {
-    padding-top: 3rem !important
+    padding-top: 3em !important
 }
 
 .pe-0 {
@@ -608,23 +665,23 @@
 }
 
 .pe-1 {
-    padding-right: .25rem !important
+    padding-right: .25em !important
 }
 
 .pe-2 {
-    padding-right: .5rem !important
+    padding-right: .5em !important
 }
 
 .pe-3 {
-    padding-right: 1rem !important
+    padding-right: 1em !important
 }
 
 .pe-4 {
-    padding-right: 1.5rem !important
+    padding-right: 1.5em !important
 }
 
 .pe-5 {
-    padding-right: 3rem !important
+    padding-right: 3em !important
 }
 
 .pb-0 {
@@ -632,23 +689,23 @@
 }
 
 .pb-1 {
-    padding-bottom: .25rem !important
+    padding-bottom: .25em !important
 }
 
 .pb-2 {
-    padding-bottom: .5rem !important
+    padding-bottom: .5em !important
 }
 
 .pb-3 {
-    padding-bottom: 1rem !important
+    padding-bottom: 1em !important
 }
 
 .pb-4 {
-    padding-bottom: 1.5rem !important
+    padding-bottom: 1.5em !important
 }
 
 .pb-5 {
-    padding-bottom: 3rem !important
+    padding-bottom: 3em !important
 }
 
 .ps-0 {
@@ -656,37 +713,37 @@
 }
 
 .ps-1 {
-    padding-left: .25rem !important
+    padding-left: .25em !important
 }
 
 .ps-2 {
-    padding-left: .5rem !important
+    padding-left: .5em !important
 }
 
 .ps-3 {
-    padding-left: 1rem !important
+    padding-left: 1em !important
 }
 
 .ps-4 {
-    padding-left: 1.5rem !important
+    padding-left: 1.5em !important
 }
 
 .ps-5 {
-    padding-left: 3rem !important
+    padding-left: 3em !important
 }
 
 /* ---------- ROUNDED ---------- */
 .rounded-auto {
-    border-radius: 0.375rem;
+    border-radius: 0.375em;
 }
 
 .rounded-auto-end {
-    border-top-right-radius: 0.375rem;
-    border-top-left-radius : 0.375rem;
+    border-top-right-radius: 0.375em;
+    border-top-left-radius : 0.375em;
 }
 
 .rounded {
-    border-radius: 0.375rem !important
+    border-radius: 0.375em !important
 }
 
 .rounded-0 {
@@ -694,23 +751,23 @@
 }
 
 .rounded-1 {
-    border-radius: 0.25rem !important
+    border-radius: 0.25em !important
 }
 
 .rounded-2 {
-    border-radius: 0.375rem !important
+    border-radius: 0.375em !important
 }
 
 .rounded-3 {
-    border-radius: 0.5rem !important
+    border-radius: 0.5em !important
 }
 
 .rounded-4 {
-    border-radius: 1rem !important
+    border-radius: 1em !important
 }
 
 .rounded-5 {
-    border-radius: 2rem !important
+    border-radius: 2em !important
 }
 
 .rounded-circle {
@@ -718,27 +775,27 @@
 }
 
 .rounded-pill {
-    border-radius: 50rem !important
+    border-radius: 50em !important
 }
 
 .rounded-top {
-    border-top-left-radius : 0.375rem !important;
-    border-top-right-radius: 0.375rem !important
+    border-top-left-radius : 0.375em !important;
+    border-top-right-radius: 0.375em !important
 }
 
 .rounded-end {
-    border-top-right-radius   : 0.375rem !important;
-    border-bottom-right-radius: 0.375rem !important
+    border-top-right-radius   : 0.375em !important;
+    border-bottom-right-radius: 0.375em !important
 }
 
 .rounded-bottom {
-    border-bottom-right-radius: 0.375rem !important;
-    border-bottom-left-radius : 0.375rem !important
+    border-bottom-right-radius: 0.375em !important;
+    border-bottom-left-radius : 0.375em !important
 }
 
 .rounded-start {
-    border-bottom-left-radius: 0.375rem !important;
-    border-top-left-radius   : 0.375rem !important
+    border-bottom-left-radius: 0.375em !important;
+    border-top-left-radius   : 0.375em !important
 }
 
 /* ---------- MATERIAL ---------- */
@@ -754,6 +811,11 @@ mat-grid-tile {
     background: lightblue;
 }
 
+/* SHADOWS */
+.buttonShadow {
+    box-shadow: 0px 4px 10px #ECEFF1
+}
+
 /* IMAGES  */
 .img-fluid {
     max-width: 100%;
@@ -766,12 +828,36 @@ mat-grid-tile {
 
 .img-thunder {
     width : auto;
-    height: calc(1.5em + 1vw) !important;
+    height: calc(1em + 1vw) !important;
 }
 
 /* SVG */
 .logoSVG {
     width    : 2em;
     height   : 2em;
-    font-size: calc(1.2em + .1vw) !important;
+    font-size: calc(1em + .5vw) !important;
+}
+
+/* Placeholder */
+.pitalic {
+
+    input,
+    textarea::placeholder {
+        font-style: italic !important;
+    }
+}
+
+.pitalic2 {
+
+    input,
+    textarea::placeholder {
+        font-style: italic !important;
+        font-size : .8em !important
+    }
+
+    input,
+    textarea::content {
+        font-style: italic !important;
+        font-size : .8em !important
+    }
 }

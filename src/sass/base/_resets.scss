@@ -1,12 +1,11 @@
+::root,
 * {
-    box-sizing: border-box;
-    margin    : 0;
-    padding   : 0;
+    margin : 0;
+    padding: 0;
 }
 
 html,
 body {
-    max-height : 100%;
     margin     : 0;
     padding    : 0;
     overflow-x : hidden;
@@ -33,7 +32,23 @@ input::-ms-clear {
     display: none;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
+.pStatic {
+    position: static !important
+}
+
+.pRelative {
+    position: relative !important
+}
+
+.pAbsolute {
+    position: absolute !important
+}
+
+.pFixed {
+    position: fixed !important
+}
+
+.pSticky {
+    position: -webkit-sticky !important;
+    position: sticky !important
 }

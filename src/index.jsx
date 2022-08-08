@@ -12,6 +12,14 @@ import { StyledEngineProvider } from '@mui/material/styles';
 import Header from './statics/Header';
 import Home from './components/Home';
 import SignIn from './components/SignIn';
+import Register from './components/Register';
+import RegisterForm1 from './components/RegisterForm1';
+import RegisterForm2 from './components/RegisterForm2';
+import Contact from './components/ContactUs';
+import Profile01 from './components/Profile01';
+import Registered from './components/Registered';
+import NumberNotFound from './components/NumberNotFound';
+import Avisos from './components/Avisos';
 
 ReactDOM.createRoot(document.querySelector("#root")).render(
   <React.StrictMode>
@@ -21,6 +29,14 @@ ReactDOM.createRoot(document.querySelector("#root")).render(
         <Routes>
           <Route index path="" element={<Home />}></Route>
           <Route path="SignIn" element={<SignIn />}></Route>
+          <Route path="Register" element={<Register />}></Route>
+          <Route path="ContactUs" element={<Contact />}></Route>
+          <Route path="Profile01" element={<Profile01 />}></Route>
+          <Route path="Registered" element={<Registered />}></Route>
+          <Route path="NumberNotFound" element={<NumberNotFound />}></Route>
+          <Route path="RegisterForm1" element={<RegisterForm1 />}></Route>
+          <Route path="RegisterForm2" element={<RegisterForm2 />}></Route>
+          <Route path="Avisos" element={<Avisos />}></Route>
         </Routes>
       </BrowserRouter>
     </StyledEngineProvider>
